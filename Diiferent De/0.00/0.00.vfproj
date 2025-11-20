@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{B4D8F92B-2A02-414B-9314-F9831C6E02F5}">
+	<Platforms>
+		<Platform Name="x64"/>
+	</Platforms>
+	<Configurations>
+		<Configuration Name="Release|x64" UseCompiler="ifxCompiler" WholeProgramOptimization="true">
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" MultiProcessorCompilation="true" Optimization="optimizeFull" GenAlternateCodePaths="codeForAVX2" UseProcessorExtensions="codeExclusivelyAVX2" Parallelization="true" MatrixLibrary="mlYes" Preprocess="preprocessYes" ReentrantCode="reentrancyThreaded" OpenMPOffloadTarget="ompOffloadSpir64CPU" OpenMP="OpenMPParallelCode" EnableOpenMPSupport="OpenMPParallelCodeIFX" F2003Semantics="true" RealKIND="realKIND8" LocalSavedScalarsZero="true" IEEEMinusZero="true" RuntimeLibrary="rtMultiThreadedDLL" UseMkl="mklParallel"/>
+			<Tool Name="VFLinkerTool" SuppressStartupBanner="true" SubSystem="subSystemConsole" HeapReserveSize="268435456" HeapCommitSize="268435456" StackReserveSize="268435456" StackCommitSize="268435456" LargeAddressAware="addrAwareLarge"/>
+			<Tool Name="VFResourceCompilerTool"/>
+			<Tool Name="VFMidlTool" TargetEnvironment="midlTargetAMD64"/>
+			<Tool Name="VFCustomBuildTool"/>
+			<Tool Name="VFPreLinkEventTool"/>
+			<Tool Name="VFPreBuildEventTool"/>
+			<Tool Name="VFPostBuildEventTool"/>
+			<Tool Name="VFManifestTool" SuppressStartupBanner="true"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter Name="modules">
+			<File RelativePath="..\..\allmodules.f90">
+				<FileConfiguration Name="Release|x64">
+					<Tool Name="VFFortranCompilerTool" EnableOpenMPSupport="OpenMPParallelCodeIFX"/>
+				</FileConfiguration>
+			</File>
+			<File RelativePath="..\..\cmi_module.f90">
+			</File>
+			<File RelativePath="..\..\dimens_analysis.f90">
+			</File>
+			<File RelativePath="..\..\dimens_oprator.f90"/>
+			<File RelativePath="..\..\dimens_physics.f90"/>
+			<File RelativePath="..\..\dimens_solver.f90"/>
+			<File RelativePath="..\..\extend_data.f90"/>
+			<File RelativePath="..\..\FastFT.f90">
+			</File>
+			<File RelativePath="..\..\module_solvers.f90">
+			</File>
+		</Filter>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+			<File RelativePath=".\Program_main.f90"/>
+			<File RelativePath=".\transprt.f90"/>
+		</Filter>
+		<Filter Name="Subroutine Files">
+			<Filter Name="aloocatefiles">
+				<File RelativePath="..\..\dimens_allocate.f90"/>
+				<File RelativePath="..\..\phdparameters.f90">
+				</File>
+			</Filter>
+			<File RelativePath="..\..\analysies_DFTA.f90">
+			</File>
+			<File RelativePath="..\..\big_matrix_set.f90">
+			</File>
+			<File RelativePath="..\..\big_matrix_x.f90">
+			</File>
+			<File RelativePath="..\..\big_matrix_x_fast.f90">
+			</File>
+			<File RelativePath="..\..\big_matrix_y.f90"/>
+			<File RelativePath="..\..\big_matrix_y_fast.f90"/>
+			<File RelativePath="..\..\equation_set.f90"/>
+			<File RelativePath="..\..\function_math.f90"/>
+			<File RelativePath="..\..\poutparam.f90"/>
+			<File RelativePath="..\..\set_xy.f90"/>
+		</Filter>
+	</Files>
+	<Globals/>
+</VisualStudioProject>
